@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours -->
+    <meta name="description" content="Site Suresnes 2020 - Colombbus">
+        <!-- la description indispensable pour les moteurs de recherche et qui s'affiche dans les résultats  -->
+    <meta name="keywords" content="HTML, CSS, Salvatore Giovinetti, colombbus, suresnes, giovinetti_licornes"> 
+    <meta name="autor" content="Salvatore Giovinetti">
+    <link rel="stylesheet" href="css/reset_eric_mayer_modifier.css"><!-- RESET EN EXTERNE D'ERIC MAYER AVEC MES MODIFICATIONS PERSONNELS -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> <!-- google font -->
+    
+    <link rel="stylesheet" href="css/giovinetti_licornes.css"> <!-- MES STYLES CSS EN EXTERNE -->
+
+    <script src="https://kit.fontawesome.com/b241a30995.js" crossorigin="anonymous"></script>
+    <title>Intégration WF3 - Licornes</title>
+</head>
+
+                    <!-- EVALUATION INTEGRATION SITE WF3 - LICORNES -->
+<!-- MAQUETTE/PHOTOS/CONSIGNE PDF/FONTS & COULEURS SUR <link rel="stylesheet" href="evaluation_docs"> -->
+                <!-- Enoncé
+Vous venez d'être embauché comme stagiaire dans une agence web. Voici votre premier
+boulot. Vous avez une demijournée
+pour intégrer la capture d'écran fournie.
+Vous pouvez consulter internet, vos codes, tout ce que vous voulez, toutefois... Si vous
+réutilisez du code du web, vous devez en commenter chaque ligne pour démontrer au
+patron que vous le comprenez parfaitement.
+La maquette a été validée par le client et doit donc être respecté scrupuleusement.
+Fichiers :
+Voici la liste des fichiers contenus dans le dossier zip fourni (sur Slack) :
+● une capture du site : screenshot.png
+● les contenus textuels : contenus.txt
+● un dossier contenant les différentes images utilisées
+● la liste des polices et des couleurs utilisées : policescouleurs.
+txt -->
+    <body>
+        <nav class="row"><!-- NAVIGATION AVEC SES LIENS -->
+            <h3 class="col-8 titrePage">MyUnicorn</h3>
+            <div class="col-4 liens">
+                <a href="le_Principe.html" title="Le Principe" target="_blank">Le principe</a>
+                <a href="nos_Licornes.html" title="Galeries des Licornes" target="_blank">Nos Licornes</a>
+                <a href="#contact" title="Contacts">Nous Trouvez</a><!-- ancre pour eviter de scoller -->
+            </div>
+        </nav>
+        <header class="row"> <!-- LE TITRE AVEC SON IMAGE ARC-EN-CIEL -->
+            <h1 class="col-12">Un jour, une licorne</h1>
+        </header>
+        <main><!-- CONTENU PRINCIPAL -->
+            <section>
+                <h2><i class="far fa-star"></i> Le principe</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore hic adipisci voluptatum quo aliquam enim reiciendis quos est voluptates. Laborum officia iste magnam, eum nemo placeat suscipit odit sapiente recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam voluptate mollitia earum quo voluptas? Quia laudantium accusantium qui ipsam aliquam fugiat sit dolores molestias, praesentium amet eos odit animi?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nesciunt possimus aliquam nihil beatae deleniti eos totam, reiciendis recusandae at quos laboriosam porro similique praesentium nulla quo. Fugiat, velit quia.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem debitis quas laboriosam excepturi obcaecati, at provident. Aut amet, quos ullam dolore nobis debitis recusandae sunt saepe neque dicta. Ut, corrupti.</p>
+            </section>
+            <section><!-- PARTIE DES GALERIES AVEC LES LICORNES -->
+                <h2><i class="far fa-star"></i> Nos Licornes</h2>
+                <div class="row">
+                    <figure class="col-3"><!-- Image de Lulu Confetty avec sa légende -->
+                        <img class="imgEffets" src="img/photo1.jpg" alt="Licornes à frange de profil">
+                        <figcaption>
+                        Lulu Confetty
+                        </figcaption>
+                    </figure>
+                    <figure class="col-3"><!-- Image de lapillon Magik avec sa légende -->
+                        <img class="imgEffets" src="img/photo2.jpg" alt="Licornes joyeuse à corne arc-en-ciel de profil">
+                        <figcaption>
+                        Lapillon Magik
+                        </figcaption>
+                    </figure>
+                    <figure class="col-3"><!-- Image de El ninjacorn avec sa légende -->
+                        <img class="imgEffets" src="img/photo3.jpg" alt="Licornes ninja arc-en-ciel vif de profil">
+                        <figcaption>
+                        El Ninjacorn
+                        </figcaption>
+                    </figure>
+                    <figure class="col-3"><!-- Image de Sweety Candy avec sa légende -->
+                        <img class="imgEffets" src="img/photo4.jpg" alt="Licornes mignonne à cheveux colorés de profil">
+                        <figcaption>
+                        Sweety Candy
+                        </figcaption>
+                    </figure>
+                </div>
+            </section> <!-- FIN DE LA PARTIE DES GALERIE -->
+            <div>
+                <h2><i class="far fa-star"></i> Nous Trouver</h2>
+                <div class="row">
+                   <div class="col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.449112219839!2d2.353162912706838!3d48.853928206634194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671fd10fa77a9%3A0xbefa2358f9e7a776!2s18%20Rue%20Geoffroy%20l&#39;Asnier%2C%2075004%20Paris!5e0!3m2!1sfr!2sfr!4v1602147594980!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                   </div> <!-- frameborder="0" -> passage en erreur au W3C -->
+                    <div class="col-6 maps">
+                        <aside>
+                            <h4>Notre élevage de licornes est situé au :</h4>
+                            <address><!-- Localisation physique de WebForce 3 -->
+                                <p>18 Rue Geoffroy l'Asnier <br> 75004 Paris <br> 01.23.45.67.89
+                                </p>
+                            </address>
+                        </aside>
+                        <div id="contact">
+                            <h4>Newsletter</h4>
+                            <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                            <fieldset><!-- Partie NewsLetter avec champs texte et son bouton -->
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="votre@email.fr">
+
+                                <form action="#" method="POST">
+                                    <input type="submit" name="Valider" value="Valider" class="button">
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div> 
+                </div><!-- FIN DE LA PARTIE MAPS ET FORMULAIRE -->
+            </div>
+        </main> <!-- FIN DU CONTENU PRINCIPAL -->
+        <footer>
+            <p>2016 <i class="far fa-copyright"></i> WebForce3</p>
+        </footer>
+    </body>
+</html>

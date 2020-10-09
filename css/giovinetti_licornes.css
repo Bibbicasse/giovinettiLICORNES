@@ -1,0 +1,259 @@
+/* RESET EN EXTERNE <link rel="stylesheet" href="css/reset_eric_mayer_modifier.css"> */
+
+
+/* REFERENCE COULEURS DE LA PAGE 
+
+barre de menus : #C55394
+hover menu : #EB43A3
+titre h1 : #C55394
+autres titres : #EB43A3
+footer : #E577B5
+noir : #333
+blanc : #FFF*/
+
+                /* STYLE BALISES PRINCIPAUX */
+
+body {
+    background-image: url('../img/background.png');
+    font-family: 'arial', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+             /* STYLE DE LA NAVIGATION */
+
+nav {
+    background-color: #C55394;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav h3 {
+    display: flex;
+    color: #fff;
+}
+
+nav a:hover { /* hauteur couleur Background a revoir */
+	color: #fff;
+    background:#EB43A3;
+    height: 70px;
+}
+
+.titrePage {
+    margin: 0 auto ;
+    font-size: 2em;
+    font-style: italic;
+    padding: 0.5em 0 0 1.5em;
+}
+
+.liens {
+    text-align: right;
+    font-size: 50px;
+}
+
+
+
+div a {
+    /* APPARENCE GENERAL */
+    color: #fff;
+    font-size: 16px;
+    padding: 50px 10px 24px 15px;
+    /* APPARENCE TEXTES */
+    text-decoration: none;
+    letter-spacing: -0.25px;
+    text-transform: uppercase;
+}
+
+            /* STYLE DU COTENUE PRINCIPAL */
+
+header {
+    text-align: center;
+    height: 180px;
+    color: #C55394;
+    margin: 15px 0 15px 0;
+}
+
+
+
+h1 {
+    line-height: 5em;
+    font-size: 50px ;
+    background: url(../img/rainbow.png) no-repeat center;
+    font-family: 'Courgette', cursive;
+    color: #C55394;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    /* KIT POUR LA COMPATIBILITE ENTRE NAVIGATEUR DIFFERENTS */
+    -moz-box-shadow: 5px 5px 15px  rgba(85, 85, 85, 0.5), -5px -5px 15px  rgba(85, 85, 85, 0.5); 
+    -webkit-box-shadow: 5px 5px 15px  rgba(85, 85, 85, 0.5), -8px -8px 15px  rgba(85, 85, 85, 0.5);
+
+            /* CONTOUR OMBRAGES */
+    box-shadow: 5px 5px 15px  rgba(85, 85, 85, 0.5),-5px -5px 15px rgba(85, 85, 85, 0.5);
+    border-radius: 15px;
+}
+
+h2, h3 {
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+    font-size: 30px;
+    padding: 50px 20px;
+}
+
+h4 {
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+    font-size: 30px;
+}
+
+section p {
+    margin: 15px 50px 0  ;
+}
+
+            /* STYLE DES GALERIES */
+img {
+    max-width: 100%;
+    margin: auto;
+	display: block;
+	padding: 10px;
+
+}
+figure:hover {
+    transform: scale(1.05);
+    transition: .75s cubic-bezier(0, 3, 0, 0)
+}
+    
+figure {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+figcaption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.750);
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px;
+    position: relative;
+    top: -45px;
+    padding: 10px;
+    height: auto;
+}
+
+        /* PARTIE CONTACT AVEC LA MAPS ET INFOS */
+
+iframe {
+    padding: 0 15px 30px;
+}
+
+aside h4 {
+    font-size:20px;
+    padding: 10px 0;
+}
+aside p {
+    padding: 20px 0;
+}
+
+#contact h4 {
+    font-size:20px;
+    padding: 10px 0;
+}
+
+#contact p {
+    padding:0 0 15px 0;
+}
+
+#email {
+    width: 225px;
+    height: 2em;
+    padding: 10px;
+}
+
+.button {
+
+        /* APPARENCE GENERAL + MARGES */
+    background-color: #C55394;
+    border: 0.5px solid #EB43A3;
+    width: 80px;
+    margin:10px auto;
+    text-align: center;
+    height: 2.25em;
+    border-radius: 5px;
+
+        /* APPARENCES TEXTES */
+    font-family: 'helvetica';
+    letter-spacing: -0.5px;
+    color: #fff;    
+}
+
+.button:hover {
+    transform: scale(1.05);
+    transition: .75s cubic-bezier(0, 3, 0, 0);
+    border : 3px solid #EB43A3;
+    
+    /* apparence du texte */
+    font-weight: bold;
+}
+            /* STYLE FOOTER */
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #C55394;
+    text-align: right;
+    margin: 30px 0 0 0
+}
+
+footer p {
+    /* APPARENCE GENERAL */
+    margin: 0;
+    padding: 0 15px;
+
+    /* APPARENCE TEXTE */
+    color: #fff;
+    line-height: 70px;
+}
+
+
+            /* STYLE FLEX ET/OU FLOAT */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+
+.col-8{
+    width:66.666666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+
+.col-12 {
+    width: 100%;
+}
